@@ -1,0 +1,316 @@
+%-------------------------
+% Resume in Latex
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{color}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage{fancyhdr}
+    \usepackage[english]{babel}
+    \usepackage{tabularx}
+    \usepackage{hyphenat}
+    \usepackage{fontawesome}
+    \input{glyphtounicode}
+    
+    
+    %---------- FONT OPTIONS ----------
+    % sans-serif
+    % \usepackage[sfdefault]{FiraSans}
+    % \usepackage[sfdefault]{roboto}
+    % \usepackage[sfdefault]{noto-sans}
+    % \usepackage[default]{sourcesanspro}
+    
+    % serif
+    % \usepackage{CormorantGaramond}
+    % \usepackage{charter}
+    
+    
+    \pagestyle{fancy}
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    
+    % Adjust margins
+    \addtolength{\oddsidemargin}{-0.5in}
+    \addtolength{\evensidemargin}{-0.5in}
+    \addtolength{\textwidth}{1in}
+    \addtolength{\topmargin}{-.5in}
+    \addtolength{\textheight}{1.0in}
+    
+    \urlstyle{same}
+    
+    \raggedbottom
+    \raggedright
+    \setlength{\tabcolsep}{0in}
+    
+    % Sections formatting
+    \titleformat{\section}{
+      \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    
+    % Ensure that generate pdf is machine readable/ATS parsable
+    \pdfgentounicode=1
+    
+    %-------------------------
+    % Custom commands
+    
+    \newcommand{\resumeItem}[1]{
+      \item\small{
+        {#1 \vspace{-2pt}}
+      }
+    }
+    
+    
+    \newcommand{\resumeSubheading}[4]{
+      \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & #2 \\
+          \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+    
+    
+    \newcommand{\resumeSubSubheading}[2]{
+        \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+          \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+    
+    
+    \newcommand{\resumeEducationHeading}[6]{
+      \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & #2 \\
+          \textit{\small#3} & \textit{\small #4} \\
+          \textit{\small#5} & \textit{\small #6} \\
+        \end{tabular*}\vspace{-5pt}
+    }
+    
+    
+    \newcommand{\resumeProjectHeading}[2]{
+        \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+          \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
+    }
+    
+    
+    \newcommand{\resumeOrganizationHeading}[4]{
+      \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & \textit{\small #2} \\
+          \textit{\small#3}
+        \end{tabular*}\vspace{-7pt}
+    }
+    
+    \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+    
+    \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+    
+    \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+    \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+    
+    %-------------------------------------------
+    %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    \begin{document}
+    
+    %---------- HEADING ----------
+    
+    \begin{center}
+        \textbf{\Huge \scshape Ömer Dikyol} \\ \vspace{3pt}
+        \small
+        \faMobile \hspace{.5pt} \href{tel:905454138170}{+90 545 413 81 70}
+        $|$
+        \faAt \hspace{.5pt} \href{mailto:omerdikyol02@gmail.com}{omerdikyol02@gmail.com}
+        $|$
+        \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/omerdikyol}{LinkedIn}
+        $|$
+        \faGithub \hspace{.5pt} \href{https://github.com/omerdikyol}{GitHub}
+        $|$
+        \faFile \hspace{.5pt} \href{https://drive.google.com/file/d/1_7WlOsMKUr7wdHsJ2C9gcjEPJobxVhnP/view?usp=sharing}{Transcript}
+        $|$
+        \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Yeditepe+%C3%9Cniversitesi+Erkek+%C3%96%C4%9Frenci+Yurdu/@40.9740592,29.1510974,15z/data=!4m2!3m1!1s0x0:0x897fd70af225d658?sa=X&ved=2ahUKEwieoqCWivOAAxUNSPEDHRXmA2EQ_BJ6BAhQEAA&ved=2ahUKEwieoqCWivOAAxUNSPEDHRXmA2EQ_BJ6BAhaEAg}{Istanbul, Turkey}
+    \end{center}
+    
+    %----------- ABOUT ME -----------
+    
+    \section{About Me}
+      \vspace{2pt}
+      \resumeSubHeadingListStart
+        \small{\item{
+            {I have had a passion for computer science from a young age, which has driven me to experiment with programs and algorithms. Instead of focusing solely on one area, I am dedicated to expanding my knowledge across various domains. As a result, I possess the ability to compete effectively in unfamiliar territories through thorough research and rapid learning. Whether working independently or collaboratively, I am determined to make a meaningful impact in any role I undertake.} \\ \vspace{3pt}
+            \textbf{Hobbies:}{ Chess, Cycling, Gaming, Table tennis, Reading, Listening Music.} \\ \vspace{3pt}
+            
+        }}
+      \resumeSubHeadingListEnd
+    
+    
+    %----------- EDUCATION -----------
+    
+    \section{Education}
+      \vspace{3pt}
+      \resumeSubHeadingListStart
+        
+        \resumeSubheading
+          {Yeditepe University
+          % \normalfont{(Admission rate: 0.09\%)}
+          }{Istanbul, Turkey}
+          {B.Sc. in Computer Engineering (\%100 Scholarship);   \textbf{GPA: 3.68/4.00}}{Sep 2020 \textbf{--} Jul 2024(est.)}
+        \resumeSubheading
+          {Alexandru Ioan Cuza University of Iași
+          % \normalfont{(Admission rate: 0.09\%)}
+          }{Iasi, Romania}   
+          {B.Sc. in Computer Science;}   {Feb 2023 \textbf{--} Jun 2023}
+                   \resumeItemListStart
+                 \resumeItem{ERASMUS Program Participant at Alexandru Ioan Cuza University (UAIC), studying Computer Science. Collaborated with international students, fostering cross-cultural understanding and teamwork.}
+             \resumeItemListEnd
+        \resumeSubheading
+          {Eskişehir Fatih Science High School
+          % \normalfont{(Admission rate: 0.85\%)}
+          }{Eskişehir, Turkey}
+          {High School Diploma;   \textbf{GPA: 89/100}}{Sep 2016 \textbf{--} Jun 2020}
+        
+      \resumeSubHeadingListEnd
+    
+    
+    
+    %----------- WORK EXPERIENCE -----------
+    
+    \section{Work Experience}
+      \vspace{3pt}
+      \resumeSubHeadingListStart
+    
+        \resumeSubheading
+          {HAVELSAN AŞ}{Istanbul, Turkey}
+          {Test Automation Intern}{Aug 2023 \textbf{--} Sep 2023}
+            \resumeItemListStart
+                \resumeItem{Contributed to the test automation process of war management system ADVENT on different systems. }
+                \resumeItem{Utilized technologies like SikuliX, Jira, Jenkins while automizing the process, managing the tasks and running tests.}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+          {MindOfis}{Istanbul, Turkey}
+          {Backend Developer Intern}{Sep 2022 \textbf{--} Oct 2022}
+            \resumeItemListStart
+                \resumeItem{Developed a customer-centric mobile application enabling menu browsing and convenient ordering. }
+                \resumeItem{Leveraged a strategic fusion of React Native, PHP, and the Laravel framework to ensure a seamless and feature-rich user experience.}
+            \resumeItemListEnd
+        
+        \resumeSubheading
+          {Wocopa}{Istanbul, Turkey (Remote)}
+          {IT Team Leader}{Oct 2021 \textbf{--} Dec 2022}
+            \resumeItemListStart
+                \resumeItem{Comprehensive employee account management, platform development, and control operations for the company.}
+                \resumeItem{Effectively led developer teams, demonstrating adeptness in website design and management..}
+                \resumeItem{Fostering teamwork and leveraging IT skills, adeptly resolved challenges while showcasing strong problem-solving abilities and effective leadership.}
+            \resumeItemListEnd
+        
+      \resumeSubHeadingListEnd
+    
+    
+    
+    %----------- RESEARCH EXPERIENCE -----------
+    
+    \section{Research Experience}
+      \vspace{3pt}
+      \resumeSubHeadingListStart
+      
+        \resumeSubheading
+          {Yeditepe University AI Lab}{Istanbul, Turkey}
+          {Undergraduate Researcher}{Jun 2022 \textbf{--} Aug 2022}
+            \resumeItemListStart
+                \resumeItem{Worked in dual projects utilizing Python libraries like TensorFlow, Keras, NumPy, and Pandas:}
+                \resumeItem{Spearheaded the Stock Market Prediction initiative, leveraging economic news data and sentiment analysis (BERT) for precise categorization. Utilized this alongside BIST100 daily stock values to develop an LSTM model predicting future stock prices.}
+                \resumeItem{Development of an Artificial Intelligence-based Cryptocurrency Bot project. Focused on Bitcoin price forecasting through diverse LSTM models, this endeavor aimed to provide accurate insights into the dynamic cryptocurrency market.}
+            \resumeItemListEnd
+        
+        \vspace{5pt}
+        
+        \resumeSubheading
+        {Yeditepe University Software Engineering Research Group}{Istanbul, Turkey}
+          {Undergraduate Researcher}{Jan 2023 \textbf{--} Sep 2023}
+            \resumeItemListStart
+                \resumeItem{Collaborated with Prof. Dr. Mert Ozkaya.}
+                \resumeItem{YeditepeSERG (Software Engineering Research Group) is a dynamic and innovative research group based at Yeditepe University, dedicated to advancing knowledge and promoting excellence in the field of software engineering. }
+                \resumeItem{Yeditepe-SERG is intended for providing innovative solutions to the problems encountered in diverse industries (e.g., defense/military, automotive, manufacturing, healthcare, transportation/logistics, finance, telecommunications, e-commerce) from the perspectives of software engineering. By doing so, Yeditepe-SERG aims to maximise effectiveness (getting closer to the business goals) and productiveness (using less time, resources and staffs) in industry.}
+            \resumeItemListEnd
+        
+      \resumeSubHeadingListEnd
+    
+    
+    %----------- PROJECTS -----------
+    
+    \section{Projects}
+        \vspace{3pt}
+        \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{YHT Conductor}}{}
+              \resumeItemListStart
+                \resumeItem{Developed a ticket reservation bot for high-speed trains, offering users the flexibility to select departure and arrival times, along with multiple hours within a day.}
+                \resumeItem{Leveraged Selenium and BeautifulSoup to conduct simultaneous checks for ticket availability. Once a ticket is found, the bot automatically selects, fills user data, reserves the ticket, and notifies the user on Discord.}
+              \resumeItemListEnd
+          
+          \resumeProjectHeading
+            {\textbf{Obesity Visualizer} $|$ \emph{\href{https://github.com/omerdikyol/obesity-visualizer}{\color{blue}GitHub}}}{}
+              \resumeItemListStart
+                \resumeItem{A PHP, HTML, CSS, SQL Web application that allows the user to visualize the evolution of obesity in the world.}
+                \resumeItem{Enabling users to select a specific country and year to visualize the progression of obesity rates. Additionally, users can opt to observe the global obesity trend.}
+                \resumeItem{Implemented interactive filters and graphs to enhance the user experience, fostering insights into obesity dynamics worldwide.}
+              \resumeItemListEnd
+    
+          \resumeProjectHeading
+            {\textbf{The Escapade Game} $|$ \emph{\href{https://github.com/omerdikyol/the-escapade-game}{\color{blue}GitHub}}}{}
+              \resumeItemListStart
+                \resumeItem{A Unity Engine project which is the end-of-term project of Game Design course I took in Erasmus}
+                \resumeItem{"The Escapade" is a captivating 3D puzzle game created using Unity Engine. Set in a mysterious world, players must solve puzzles and complete minigames to progress through levels. With its low-poly art style, the game offers a visually unique experience. Explore immersive environments, unlock secrets, and test your intellect in this captivating adventure where every puzzle brings you closer to freedom.}
+              \resumeItemListEnd
+          
+        \resumeSubHeadingListEnd
+    
+    
+    
+    %-----------TECHNICAL SKILLS -----------
+    
+    \section{Technical Skills}
+      \vspace{2pt}
+      \resumeSubHeadingListStart
+        \small{\item{
+            \textbf{Programming:}{ Python, C, C++, Java, C\#, JavaScript, TypeScript, PHP, HTML, CSS, MySQL, MongoDB} \\ \vspace{3pt}
+            \textbf{Frameworks and Libraries:}{ Node.js, Laravel, NumPy, Pandas, TensorFlow, Keras, Selenium, BeautifulSoup} \\ \vspace{3pt}
+            \textbf{Technologies:}{ Git, Unity Engine, SikuliX} \\ \vspace{3pt}
+            
+            % \textbf{Frameworks}{: X, X, X} \\
+            % \textbf{Developer Tools}{: X, X, X} \\
+            % \textbf{Libraries}{: X, X, X} \\
+            % \textbf{Applications}{: X, X, X}
+        }}
+      \resumeSubHeadingListEnd
+    
+    
+    %----------- SOFT SKILLS -----------
+    
+    \section{Soft Skills}
+      \vspace{2pt}
+      \resumeSubHeadingListStart
+        \small{\item{
+            \textbf{Languages:}{ Turkish (Native), English (B2)}  \\ \vspace{3pt}
+            \textbf{Core Competencies:}{ Teamwork, Adaptability, Problem-solving, Time Management, Leadership, Critical Thinking, Creativity, Flexibility, Resilience, Decision-making}  \\ \vspace{3pt}
+            \textbf{Interpersonal Abilities:}{ Collaboration, Attention to Detail, Adaptability, Empathy, Collaboration, Active Listening, Initiative, Negotiation}  \\ \vspace{3pt}
+            \textbf{Additional Skills:}{ Multitasking, Conflict Resolution, Analytical Thinking, Integrity, Networking, Self-Motivation}
+        }}
+      \resumeSubHeadingListEnd
+    \end{document}
